@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>String Reverse</title>
+<script>	
+	
+	/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var removeDuplicates = function(nums) {
+    let numbers = [];
+    for(let i=nums.length;i>=0;i--){
+        if(numbers.indexOf(nums[i]) < 0 ){
+            numbers.push(nums[i]);
+        }
+    }
+    return numbers;
+};
+
+removeDuplicates([0,0,1,1,1,2,2,3,3,4])
+</script>
+</head>
+<body>
+
+</body>
+</html>
